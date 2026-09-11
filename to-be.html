@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Verb To Be | Arash English</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                ARASH
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="grammar.html">Grammar</a>
+                <a href="vocabulary.html">Vocabulary</a>
+                <a href="exercises.html">Exercises</a>
+                <a href="about.html">About</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main class="lesson">
+
+        <p class="eyebrow">
+            BEGINNER GRAMMAR
+        </p>
+
+        <h1>Verb To Be</h1>
+
+        <p class="page-intro">
+            The verb "to be" is one of the most important
+            verbs in English.
+        </p>
+
+
+        <section class="lesson-box">
+
+            <h2>What is "to be"?</h2>
+
+            <p>
+                We use the verb "to be" to talk about people,
+                things, feelings, jobs and locations.
+            </p>
+
+        </section>
+
+
+        <section class="lesson-box">
+
+            <h2>Am, Is and Are</h2>
+
+            <table>
+
+                <tr>
+                    <th>Subject</th>
+                    <th>Verb</th>
+                    <th>Example</th>
+                </tr>
+
+                <tr>
+                    <td>I</td>
+                    <td>am</td>
+                    <td>I am a student.</td>
+                </tr>
+
+                <tr>
+                    <td>You</td>
+                    <td>are</td>
+                    <td>You are happy.</td>
+                </tr>
+
+                <tr>
+                    <td>He</td>
+                    <td>is</td>
+                    <td>He is a teacher.</td>
+                </tr>
+
+                <tr>
+                    <td>She</td>
+                    <td>is</td>
+                    <td>She is a doctor.</td>
+                </tr>
+
+                <tr>
+                    <td>It</td>
+                    <td>is</td>
+                    <td>It is cold.</td>
+                </tr>
+
+                <tr>
+                    <td>We</td>
+                    <td>are</td>
+                    <td>We are friends.</td>
+                </tr>
+
+                <tr>
+                    <td>They</td>
+                    <td>are</td>
+                    <td>They are students.</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+
+        <section class="lesson-box">
+
+            <h2>Examples</h2>
+
+            <div class="examples">
+
+                <p>✅ I am Arash.</p>
+
+                <p>✅ She is a teacher.</p>
+
+                <p>✅ He is happy.</p>
+
+                <p>✅ We are friends.</p>
+
+                <p>✅ They are students.</p>
+
+            </div>
+
+        </section>
+
+
+        <section class="lesson-box">
+
+            <h2>Negative Sentences</h2>
+
+            <p>
+                Add <strong>not</strong> to make a negative sentence.
+            </p>
+
+            <div class="examples">
+
+                <p>I am <strong>not</strong> tired.</p>
+
+                <p>He is <strong>not</strong> a doctor.</p>
+
+                <p>They are <strong>not</strong> at home.</p>
+
+            </div>
+
+        </section>
+
+
+        <section class="lesson-box practice">
+
+            <h2>Quick Practice</h2>
+
+            <p>
+                Choose the correct answer:
+            </p>
+
+            <h3>
+                She ___ a student.
+            </h3>
+
+            <button onclick="checkAnswer('wrong')">
+                A) am
+            </button>
+
+            <button onclick="checkAnswer('correct')">
+                B) is
+            </button>
+
+            <button onclick="checkAnswer('wrong')">
+                C) are
+            </button>
+
+            <p id="result"></p>
+
+        </section>
+
+
+        <a href="grammar.html" class="button">
+            ← Back to Grammar
+        </a>
+
+    </main>
+
+
+    <footer>
+
+        <h2>ARASH</h2>
+
+        <p>Learn English. Improve yourself.</p>
+
+    </footer>
+
+
+    <script>
+
+        function checkAnswer(answer) {
+
+            const result = document.getElementById("result");
+
+            if (answer === "correct") {
+
+                result.textContent = "✅ Correct! Great job!";
+
+            } else {
+
+                result.textContent = "❌ Not quite. Try again!";
+
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>

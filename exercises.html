@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Exercises | Arash English</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            ARASH
+        </a>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="grammar.html">Grammar</a>
+
+            <a href="vocabulary.html">Vocabulary</a>
+
+            <a href="exercises.html">Exercises</a>
+
+            <a href="about.html">About</a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<main class="page">
+
+    <p class="eyebrow">
+        PRACTICE YOUR ENGLISH
+    </p>
+
+    <h1>Exercises</h1>
+
+    <p class="page-intro">
+        Test your English knowledge.
+    </p>
+
+
+    <section class="exercise">
+
+        <h2>Question 1</h2>
+
+        <p>
+            I ___ a student.
+        </p>
+
+        <button onclick="answer(1, 'wrong')">
+            A) is
+        </button>
+
+        <button onclick="answer(1, 'correct')">
+            B) am
+        </button>
+
+        <button onclick="answer(1, 'wrong')">
+            C) are
+        </button>
+
+        <p id="answer1"></p>
+
+    </section>
+
+
+    <section class="exercise">
+
+        <h2>Question 2</h2>
+
+        <p>
+            They ___ happy.
+        </p>
+
+        <button onclick="answer(2, 'wrong')">
+            A) is
+        </button>
+
+        <button onclick="answer(2, 'wrong')">
+            B) am
+        </button>
+
+        <button onclick="answer(2, 'correct')">
+            C) are
+        </button>
+
+        <p id="answer2"></p>
+
+    </section>
+
+
+    <section class="exercise">
+
+        <h2>Question 3</h2>
+
+        <p>
+            She ___ a teacher.
+        </p>
+
+        <button onclick="answer(3, 'wrong')">
+            A) are
+        </button>
+
+        <button onclick="answer(3, 'correct')">
+            B) is
+        </button>
+
+        <button onclick="answer(3, 'wrong')">
+            C) am
+        </button>
+
+        <p id="answer3"></p>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <h2>ARASH</h2>
+
+    <p>Learn English. Improve yourself.</p>
+
+</footer>
+
+
+<script>
+
+function answer(question, result) {
+
+    const message =
+        document.getElementById("answer" + question);
+
+    if (result === "correct") {
+
+        message.textContent =
+            "✅ Correct! Excellent!";
+
+    } else {
+
+        message.textContent =
+            "❌ Incorrect. Try again!";
+
+    }
+
+}
+
+</script>
+
+</body>
+
+</html>
