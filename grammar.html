@@ -1,19 +1,41 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Grammar Lessons | Arash English</title><link rel="stylesheet" href="style.css"></head>
-<body><header><div class="nav"><a class="logo" href="index.html">ARASH</a><nav>
-<a href="index.html">Home</a><a href="grammar.html">Grammar</a><a href="vocabulary.html">Vocabulary</a><a href="exercises.html">Exercises</a><a href="about.html">About</a></nav></div></header>
-<main class="container"><section class="hero"><span class="badge">A1 → A2</span><h1>Grammar Lessons</h1>
-<p class="subtitle">Learn English grammar step by step, with English explanations and Persian support.</p></section>
-<div class="grid">
-<div class="card"><span class="badge">Lesson 1</span><h2>Verb To Be</h2><p>am / is / are, negatives, questions and short answers.</p><a href="to-be.html">Start lesson</a></div>
-<div class="card"><span class="badge">Lesson 2</span><h2>Pronouns</h2><p>Subject, object, possessive adjectives and possessive pronouns.</p><a href="pronouns.html">Start lesson</a></div>
-<div class="card"><span class="badge">Lesson 3</span><h2>Articles</h2><p>Learn a, an, the and when no article is needed.</p><a href="articles.html">Start lesson</a></div>
-<div class="card"><span class="badge">Lesson 4</span><h2>Present Simple</h2><p>Habits, routines, facts, questions and frequency adverbs.</p><a href="present-simple.html">Start lesson</a></div>
-<div class="card"><span class="badge">Lesson 5</span><h2>Past Simple</h2><p>Finished past actions, regular and irregular verbs.</p><a href="past-simple.html">Start lesson</a></div>
-<div class="card"><span class="badge">Lesson 6</span><h2>Future</h2><p>will, be going to, predictions, plans and decisions.</p><a href="future.html">Start lesson</a></div>
-</div>
-<div class="lesson-box" style="margin-top:28px"><h2>Recommended order</h2>
-<p>1. To Be → 2. Pronouns → 3. Articles → 4. Present Simple → 5. Past Simple → 6. Future</p>
-<p class="fa">ترتیب پیشنهادی: ابتدا فعل to be، سپس ضمایر، حروف تعریف، حال ساده، گذشته ساده و در پایان ساختارهای آینده را یاد بگیرید.</p></div>
-</main><footer>ARASH — Learn English. Improve yourself.</footer></body></html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A1 and A2 English grammar lessons with Persian translations and examples.">
+  <title>Grammar | Arash English</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="page-main">
+    <section class="page-hero">
+      <div class="container narrow">
+        <span class="eyebrow">GRAMMAR LAB • A1 + A2</span>
+        <h1>Grammar, explained simply.</h1>
+        <p>Start with A1 foundations and move through A2 structures. Every lesson includes English examples and Persian translations.</p>
+      </div>
+    </section>
+
+    <section class="section section-tight">
+      <div class="container">
+        <div class="toolbar">
+          <div class="search-wrap"><span>⌕</span><input id="grammarSearch" type="search" placeholder="Search grammar, e.g. present perfect..."></div>
+          <div class="filter-tabs" id="levelFilters">
+            <button class="filter-btn active" data-level="all">All</button>
+            <button class="filter-btn" data-level="A1">A1</button>
+            <button class="filter-btn" data-level="A2">A2</button>
+          </div>
+        </div>
+        <div id="grammarList" class="lesson-grid"></div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="script.js"></script>
+</body>
+</html>

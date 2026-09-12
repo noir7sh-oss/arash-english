@@ -1,16 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Exercises | Arash English</title><link rel="stylesheet" href="style.css"></head>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Challenging English grammar and vocabulary exercises with instant feedback.">
+  <title>Exercises | Arash English</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<header><nav class="navbar"><a href="index.html" class="logo">ARASH</a><button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button><div class="nav-links"><a href="index.html">Home</a><a href="grammar.html">Grammar</a><a href="vocabulary.html">Vocabulary</a><a class="active" href="exercises.html">Exercises</a><a href="about.html">About</a></div></nav></header>
-<main class="page quiz-page">
-<p class="eyebrow">A1–A2 PRACTICE</p><h1>English Challenge</h1><p class="page-intro">سؤالات سخت‌تر برای بررسی گرامر و واژگان. پاسخ‌ها را انتخاب کن و در پایان امتیازت را ببین.</p>
-<div class="quiz-header"><span id="progress">Question 1 of 15</span><strong id="score">Score: 0</strong></div>
-<div id="quiz"></div>
-<div class="quiz-actions"><button id="nextBtn" class="button" disabled>Next Question →</button><button id="restartBtn" class="button secondary" hidden>Try Again</button></div>
-<div id="final" class="final-score" hidden></div>
-</main>
-<footer><h2>ARASH</h2><p>Learn English. Improve yourself.</p><div class="footer-links"><a href="index.html">Home</a><a href="grammar.html">Grammar</a><a href="vocabulary.html">Vocabulary</a><a href="exercises.html">Exercises</a><a href="about.html">About</a></div><p class="copyright">© 2026 Arash English</p></footer>
-<script src="quiz.js"></script><script src="script.js"></script>
+  <div id="site-header"></div>
+  <main class="page-main">
+    <section class="page-hero">
+      <div class="container narrow">
+        <span class="eyebrow">PRACTICE • A1 + A2</span>
+        <h1>Don't just know it. Prove it.</h1>
+        <p>These questions mix grammar and vocabulary. Read carefully — several distractors are designed to look tempting.</p>
+      </div>
+    </section>
+
+    <section class="section section-tight">
+      <div class="container exercise-layout">
+        <div class="quiz-card">
+          <div class="quiz-head"><div><span class="eyebrow">CHALLENGE MODE</span><h2 id="quizTitle">Mixed English Challenge</h2></div><div class="score-box"><span id="scoreText">0 / 0</span></div></div>
+          <div id="quizArea"></div>
+          <div class="quiz-actions">
+            <button id="checkQuiz" class="btn btn-primary">Check answers</button>
+            <button id="resetQuiz" class="btn btn-secondary">Reset</button>
+          </div>
+          <div id="quizResult" class="quiz-result hidden"></div>
+        </div>
+        <aside class="tip-card">
+          <span class="eyebrow">SMART PRACTICE</span>
+          <h3>Before you choose</h3>
+          <ul>
+            <li>Look for time expressions.</li>
+            <li>Check the subject and auxiliary.</li>
+            <li>Read the whole sentence, not only the blank.</li>
+            <li>Ask yourself why the other choices are wrong.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="script.js"></script>
 </body>
 </html>
